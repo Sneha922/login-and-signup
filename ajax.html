@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://i0.wp.com/cooldigital.photography/wp-content/uploads/2014/08/you-create-your-destiny-.jpg?resize=750%2C417&ssl=1');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        img{
+            margin-left: 250px;
+            margin-top: 200px;
+            width: 20%;
+            height: 25%;
+        }
+        #txt1{
+            font-size: 20px;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        nav{
+            float: right;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+
+        }
+        #sign{
+            background-color: rgb(3, 81, 182);
+            text-decoration: none;
+            padding: 10px 25px;
+        }
+        #sign:hover{
+            background-color: rgb(51, 148, 228);
+        }
+        #txtHint{
+            color: rgb(7, 6, 6);
+            font-size: 30px;
+            background-color: white;
+            text-align: justify;
+        }
+        footer{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a>
+        <a href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a>
+        <a id="sign" href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</a>
+    </nav><br>
+    <div>
+    <img src="https://i.stack.imgur.com/xVtU1.jpg" alt=""><br><br><br><br>
+
+    <input type="text" id="txt1" onkeyup="showHint(this.value)" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i><br><br><br>
+    <span id="txtHint"></span>
+    </div><BR><BR>
+    
+    <a href="https://www.youtube.com/"><img style="width: 50px; height: 50px; border-radius: 50%; margin: 0px; padding: 10PX;" src="https://images.news18.com/ibnlive/uploads/2022/01/youtube-logo-16431919883x2.jpg?impolicy=website&width=510&height=356" alt=""></a>
+    <a href="http://wiki.bitsathy.ac.in/"><img style="width: 50px; height: 50px; border-radius: 50%; margin: 0px; padding: 10PX;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Eo_circle_blue_white_letter-b.svg/1200px-Eo_circle_blue_white_letter-b.svg.png" alt=""></a>
+    <a href="https://www.google.co.in/"><img style="width: 50px; height: 50px; border-radius: 50%; margin: 0px; padding: 10PX;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRj8VX-kRMfUtK3E22Zdo_MlC52eViRGu8JrRxHifsBIPN73t_9FOw0UJocRoOH0b1cMM&usqp=CAU" alt=""></a>
+    <a href="https://in.linkedin.com/"><img style="width: 50px; height: 50px; border-radius: 50%; margin: 0px; padding: 10PX;" src="data:image/png;base64,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" alt=""></a>
+<br><br>
+    <a href="https://discord.com/"><img style="width: 50px; height: 50px; border-radius: 50%; margin: 0px; padding: 10PX;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xKsVMoo2EGGk6x57P8c8tuT42a3F7AQcHRffg-JBML6USYEIuWhS02VKezJ4U6aDQqU&usqp=CAU" alt=""></a>
+    <a href="https://github.com/"><img style="width: 50px; height: 50px; border-radius: 50%; margin: 0px; padding: 10PX;" src="https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF9_400x400.jpg" alt=""></a>
+    <a href="https://www.google.com/intl/en_in/chrome/"><img style="width: 50px; height: 50px; border-radius: 50%; margin: 0px; padding: 10PX;" src="https://image.shutterstock.com/image-photo/kiev-ukraine-march-8-2015-260nw-276081176.jpg" alt=""></a>
+    <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img style="width: 50px; height: 50px; border-radius: 50%; margin: 0px; padding: 10PX;" src="https://thumbs.dreamstime.com/b/logo-icon-vector-logos-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-jpeg-paper-texture-glossy-emblem-wallpaper-210442689.jpg" alt=""></a>
+<br><br><br><br><br><br><br><br><br><br><br>
+        
+</body>
+<footer>
+    <a href="https://chrome.google.com/webstore/category/extensions" target="_blank" style="color: black; background-color: azure;padding: 10px; text-decoration:none; font-size: 15px; border-radius: 10px;"><i class="fa-duotone fa-paintbrush"></i>Customize</a>
+</footer>
+<script src="https://kit.fontawesome.com/66ab46a12b.js" crossorigin="anonymous"></script>
+<script>
+    function showHint(str) {
+      if (str.length == 0) { 
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+      }
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        document.getElementById("txtHint").innerHTML =
+        this.responseText;
+      }
+      xhttp.open("GET", "ajax.php?q="+str);
+      xhttp.send();   
+    }
+    </script>
+    
+</html>
